@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Points Collector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon32.png" alt="Twitch Points Collector" class="icon">
+            <h1>Twitch Points Collector</h1>
+        </div>
+        
+        <div class="status-section">
+            <div class="status-indicator" id="statusIndicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span class="status-text" id="statusText">Загрузка...</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="toggleButton" class="toggle-btn" disabled>
+                <span id="buttonText">Загрузка...</span>
+            </button>
+        </div>
+        
+        <div class="autostart-section">
+            <div class="setting-item">
+                <span class="setting-label">🚀 Автозапуск при открытии Twitch</span>
+                <label class="switch">
+                    <input type="checkbox" id="autoStartToggle" disabled>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="setting-description">
+                Автоматически запускает сбор баллов при обнаружении открытых трансляций
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">Интервал проверки:</span>
+                <span class="info-value">30 секунд</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Задержка после клика:</span>
+                <span class="info-value">2 секунды</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Автоостановка:</span>
+                <span class="info-value">При закрытии вкладок</span>
+            </div>
+        </div>
+        
+        <div class="description">
+            <p>Расширение автоматически собирает Channel Points на всех открытых вкладках Twitch.</p>
+            <p><strong>Важно:</strong> Оставьте вкладки с трансляциями открытыми для работы коллектора.</p>
+        </div>
+        
+        <div class="footer">
+            <p class="version">Версия 1.0.1</p>
+            <div class="links">
+                <a href="#" id="helpLink">Помощь</a>
+                <span class="separator">|</span>
+                <a href="#" id="settingsLink">Настройки</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
