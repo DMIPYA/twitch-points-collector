@@ -197,7 +197,7 @@ const selectors = [
 
 ```bash
 # Клонирование
-git clone https://github.com/YOUR_USERNAME/twitch-points-collector.git
+git clone https://github.com/DMIPYA/twitch-points-collector.git
 
 # Внесение изменений
 # ... редактируйте файлы ...
